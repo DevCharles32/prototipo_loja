@@ -1,73 +1,161 @@
-body{
+body {
     height: 1500px;
 }
 
-header{
+header {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-nav{
+nav {
     width: 100%;
 }
 
-ul{
-    width: 80%;
+ul {
+    width: 90%;
     display: flex;
-    justify-content: space-around;
-    margin:60px 0px 0px 50px;
+    justify-content: space-evenly;
+    margin: 60px 0px 0px 50px;
 }
 
-li{
-    font-size: 20px;
+li {
+    font-size: 23px;
     font-weight: bold;
     color: #ffff;
     transition: .1s;
-    font-family: 'Monofonto','sans serif';
-}
+    font-family: "Agdasima", sans-serif;}
 
-li:hover{
+li:hover {
     color: rgba(0, 0, 200, 100);
 }
 
-#logo{
+#logo {
     width: 200px;
     height: auto;
-    margin-top: 50px;
+    margin: 50px 0 0 50px;
 }
 
-.principal{
+.vd-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    align-items: center;
+}
+
+.vd-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    height: 100%;
 }
 
-.apresentação{
-    width: 70%;
+.vd-container img {
+    background-color: rgba(10,23,55,0.01);
+    position: relative;
+    z-index: 999;
+    margin-top: 330px;
+    }
+
+.align{
+    width: 50%;
     display: flex;
     justify-content: center;
-}
-
-.texto-video{
-    display: flex;
-    justify-content: center;
-}
-
-.video{
-    margin-top: 15%;
-    width: 500px;
-    height: 300px;
 }
 
 p{
-    text-align: center;
-    color: #ffff;
-    margin-top: 20%;
+    background-color: rgba(10,23,55,0.05);
+    position: absolute;
+    width: 30%;
     font-size: 25px;
-    font-family:"Josefin Sans", serif; ;
+    font-family: "Unbounded", sans-serif;;
+    color: white;
+    left: 50%;
+    top: 40%;
+    z-index: 1;
+    text-align: center;
 }
 
+.trabalhos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    height: 500px;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+#rodape{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.list{
+    width: 100%;
+    padding: 0 90px 0px 0 ;
+    flex-direction: column;
+}
+
+#logo-footer{
+    width: 200px;
+    height: 150px;
+}
+
+
+.icons{
+    width: 100%;
+    text-align: center;
+}
+
+.fa-instagram{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.fa-linkedin{
+    color: #ffff;
+    font-size: 25px;
+}
+
+.fa-youtube{
+    color: #ffff;
+    font-size: 25px;
+}
+
+.fa-whatsapp{
+    color: #ffff;
+    font-size: 25px;
+}
